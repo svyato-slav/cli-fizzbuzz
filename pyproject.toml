@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fizz_buzz"
+version = "0.0.1"
+authors = [
+  { name="Svyatoslav Shchurov", email="life567@mail.ru" },
+]
+description = "Python FizzBuzz is a CLI tool for famous FizzBuzz task.e"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  'Click',
+]
+
+[project.optional-dependencies]
+tests = [
+  'pytest',
+  'pytest-cov',
+]
+lint = [
+  "pylint"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/svyato-slav/cli-fizzbuzz"
+"Bug Tracker" = "https://github.com/svyato-slav/cli-fizzbuzz/issues"
+
+[project.scripts]
+fizz_buzz = "src.fizz_buzz:cli"
