@@ -32,7 +32,7 @@ First install test dependencies:
 `pip install .[tests]`
 
 Then, run tests:
-`pytest --cov-report html --cov=fizz_buzz tests/`
+`pytest --cov-report html --cov=src tests/`
 
 
 ## Run linter
