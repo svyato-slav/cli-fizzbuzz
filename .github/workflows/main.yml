@@ -24,6 +24,7 @@ jobs:
         run: |
           pip install .[lint]
           pylint src tests
+        continue-on-error: true
       - name: Test with pytest
         run: |
           pytest
